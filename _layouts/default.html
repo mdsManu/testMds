@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <title>{{ page.title }} | More Dimensions GmbH</title>
+    <meta charset="uf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="{{ '/assets/css/materialize.css?v=' | append: site.github.build_revision | relative_url }}">
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="{{ 'assets/js/bin/materialize.js' | relative_url }}"></script>
+  </head>
+  <body>
+
+    <!-- ================== -->
+    <!--    START BANNER    -->
+    <!-- ================== -->
+    <img src="/assets/img/logo-mds-small.png" alt="" class="hide-on-small-only top-right-logo">
+    <div class="slider hide-on-small-only" id="BannerHeight">
+      <div class="slider-arrows">
+        <div class="left-arrow"><i class="material-icons">keyboard_arrow_right</i></div>
+        <div class="right-arrow"><i class="material-icons">keyboard_arrow_left</i></div>
+      </div>
+      <ul class="slides">
+        {% for banner in site.data.default.banner %}
+        <li>
+          <img src="{{ banner.img-url }}" alt="">
+          <div class="caption banner-text hoverable">
+            <h4>{{ banner.title }}</h4>
+            <p class="light grey-text text-lighten-3 flow-text">{{ banner.text }}</p>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <!-- ================== -->
+    <!--     END BANNER     -->
+    <!-- ================== -->
+
+    <!-- ================== -->
+    <!--    START NAVBAR    -->
+    <!-- ================== -->
+    <nav class="main-nav" style="z-index: 999">
+      <div class="nav-wrapper grey lighten-3 black-text">
+        <div class="container">
+          <a href="/" class="brand-logo"><img style="height: 60px; padding: 4px 0;" src="/assets/img/logo-mds-small.png" alt=""></a>  
+          <a href="#" data-target="slide-out-menu" class="button-collapse sidenav-trigger hide-on-large-only"><i class="material-icons mdsorange-text">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            {% for item in site.data.default.nav %}
+              <li><a href="{{ item.url }}" class="dropdown-trigger mdsorange-text" data-target="{{ item.title }}_dropdown" style="font-size: 25px; font-weight: 600">{{ item.title }}</a></li>
+              <ul id="{{ item.title }}_dropdown" class="dropdown-content">
+                {% for dropdown in item.dropdown %}
+                  <li><a href="{{ dropdown.url }}">{{ dropdown.title }}</a></li>
+                {% endfor %}
+              </ul>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <ul id="slide-out-menu" class="sidenav">
+      <li>
+        <img src="/assets/img/logo-mds-small.png" alt="" style="width: 100%; padding: 2% 2% 0 2%;">
+      </li>
+      <li class="divider"></li>
+      {% for item in site.data.default.nav %}
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li><a class="collapsible-header">{{ item.title }}</a></li>
+          <div class="collapsible-body">
+            <ul>
+              {% for dropdown in item.dropdown %}
+              <li><a href="{{ dropdown.url }}">{{ dropdown.title }}</a></li>
+              {% endfor %}
+              <li class="divider"></li>
+            </ul>
+          </div>
+        </ul>  
+      </li>
+      {% endfor %}
+    </ul>
+    <!-- ================== -->
+    <!--     END NAVBAR     -->
+    <!-- ================== -->
+
+    <div class="container">
+      {{ content }}
+    </div>
+
+    <!-- ================== -->
+    <!--    START FOOTER    -->
+    <!-- ================== -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+            {% for item in site.data.default.footer %}
+              <div class="col s12 m6 l3">
+                <h5 class="footer-header white-text">{{ item.title }}</h5>
+                <ul>
+                  {% for content in item.content %}
+                    <li><a href="{{ content.url }}" class="footer-links grey-text text-lighten-3">{{ content.title }}</a></li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endfor %}  
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          &copy; 2018 More Dimensions GmbH
+        </div>
+      </div>
+    </footer>
+    <!-- ================== -->
+    <!--     END FOOTER     -->
+    <!-- ================== -->
+  </body>
+</html>
+
+<script>
+  // var BannerHeight = document.getElementById('#BannerHeight').clientHeight;
+
+  // var elem = document.querySelector('.main-nav');
+  // var instance = M.Pushpin.init(elem, { top: BannerHeight });
+
+  // Dropdown
+  $('.dropdown-trigger').dropdown({ coverTrigger: false, hover: true });
+
+  var elem = document.querySelector('.sidenav');
+  var instance = M.Sidenav.init(elem);
+
+  // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+  var collapsibleElem = document.querySelector('.collapsible');
+  var collapsibleInstance = M.Collapsible.init(collapsibleElem);
+
+  // Slider
+  var elem = document.querySelector('.slider');
+  var instance = M.Slider.init(elem, { height: 900, indicators: false });
+
+</script>
