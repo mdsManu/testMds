@@ -8,18 +8,18 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="{{ 'assets/css/materialize.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="assets/css/materialize.css">
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="{{ 'assets/js/bin/materialize.js' | relative_url }}"></script>
+    <script type="text/javascript" src="assets/js/bin/materialize.js"></script>
   </head>
   <body>
 
     <!-- ================== -->
     <!--    START BANNER    -->
     <!-- ================== -->
-    <img src="/assets/img/logo-mds-small.png" alt="" class="hide-on-small-only top-right-logo">
+    <img src="assets/img/logo-mds-small.png" alt="" class="hide-on-small-only top-right-logo">
     <div class="slider hide-on-small-only" id="BannerHeight">
       <div class="slider-arrows">
         <div class="left-arrow"><i class="material-icons">keyboard_arrow_right</i></div>
@@ -47,7 +47,7 @@
     <nav class="main-nav" style="z-index: 999">
       <div class="nav-wrapper grey lighten-3 black-text">
         <div class="container">
-          <a href="/" class="brand-logo"><img style="height: 60px; padding: 4px 0;" src="/assets/img/logo-mds-small.png" alt=""></a>  
+          <a href="/" class="brand-logo"><img style="height: 60px; padding: 4px 0;" src="assets/img/logo-mds-small.png" alt=""></a>  
           <a href="#" data-target="slide-out-menu" class="button-collapse sidenav-trigger hide-on-large-only"><i class="material-icons mdsorange-text">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             {% for item in site.data.default.nav %}
@@ -65,7 +65,7 @@
 
     <ul id="slide-out-menu" class="sidenav">
       <li>
-        <img src="/assets/img/logo-mds-small.png" alt="" style="width: 100%; padding: 2% 2% 0 2%;">
+        <img src="assets/img/logo-mds-small.png" alt="" style="width: 100%; padding: 2% 2% 0 2%;">
       </li>
       <li class="divider"></li>
       {% for item in site.data.default.nav %}
@@ -103,7 +103,7 @@
                 <h5 class="footer-header white-text">{{ item.title }}</h5>
                 <ul>
                   {% for content in item.content %}
-                    <li><a href="{{ content.url }}" class="footer-links grey-text text-lighten-3">{{ content.title }}</a></li>
+                    <li><a href="{{ content.url }}" class="footer-links grey-text text-lighten-3">{{ content.title }}<a></li>
                   {% endfor %}
                 </ul>
               </div>
