@@ -8,25 +8,26 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="{{ 'assets/css/materialize.css' | absolute_url }}">
+    <link rel="stylesheet" href="{{ 'assets/css/materialize.css' | relative_url }}">
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="{{ 'assets/js/bin/materialize.js' | absolute_url }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/bin/materialize.js' | relative_url }}"></script>
   </head>
   <body>
 
     <!-- ================== -->
     <!--    START BANNER    -->
     <!-- ================== -->
-    <img src="{{ 'assets/img/logo-mds-small.png' | append: site.github.build_revision | absolute_url }}" alt="" class="hide-on-small-only top-right-logo">
-    <div class="slider hide-on-small-only" id="BannerHeight">
+    <img src="{{ 'assets/img/logo-mds-small.png' | absolute_url }}" alt="" class="hide-on-small-only top-right-logo">
+    <!-- | append: site.github.build_revision -->
+    <div class="slider hide-on-small-only">
       <div class="slider-arrows">
         <div class="left-arrow"><i class="material-icons">keyboard_arrow_right</i></div>
         <div class="right-arrow"><i class="material-icons">keyboard_arrow_left</i></div>
       </div>
       <ul class="slides">
-        {% for banner in site.data.default.banner %}
+        {% for banner in site.data.default.banner.banner %}
         <li>
           <img src="{{ banner.img-url }}" alt="">
           <div class="caption banner-text hoverable">
@@ -50,7 +51,7 @@
           <a href="/" class="brand-logo"><img style="height: 60px; padding: 4px 0;" src="assets/img/logo-mds-small.png" alt=""></a>  
           <a href="#" data-target="slide-out-menu" class="button-collapse sidenav-trigger hide-on-large-only"><i class="material-icons mdsorange-text">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            {% for item in site.data.default.nav %}
+            {% for item in site.data.default.navbar.nav %}
               <li><a href="{{ item.url }}" class="dropdown-trigger mdsorange-text" data-target="{{ item.title }}_dropdown" style="font-size: 25px; font-weight: 600">{{ item.title }}</a></li>
               <ul id="{{ item.title }}_dropdown" class="dropdown-content">
                 {% for dropdown in item.dropdown %}
@@ -68,7 +69,7 @@
         <img src="assets/img/logo-mds-small.png" alt="" style="width: 100%; padding: 2% 2% 0 2%;">
       </li>
       <li class="divider"></li>
-      {% for item in site.data.default.nav %}
+      {% for item in site.data.default.navbar.nav %}
       <li class="no-padding">
         <ul class="collapsible collapsible-accordion">
           <li><a class="collapsible-header">{{ item.title }}</a></li>
@@ -98,7 +99,7 @@
     <footer class="page-footer">
       <div class="container">
         <div class="row">
-            {% for item in site.data.default.footer %}
+            {% for item in site.data.default.footer.footer %}
               <div class="col s12 m6 l3">
                 <h5 class="footer-header white-text">{{ item.title }}</h5>
                 <ul>
@@ -123,10 +124,10 @@
 </html>
 
 <script>
-  // var BannerHeight = document.getElementById('#BannerHeight').clientHeight;
+  // var BannerHeight = $('#BannerHeight').innerHeight();
 
-  // var elem = document.querySelector('.main-nav');
-  // var instance = M.Pushpin.init(elem, { top: BannerHeight });
+  var elem = document.querySelector('.main-nav');
+  var instance = M.Pushpin.init(elem, { top: 900 });
 
   // Dropdown
   $('.dropdown-trigger').dropdown({ coverTrigger: false, hover: true });

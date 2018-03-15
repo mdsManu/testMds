@@ -4,7 +4,7 @@ title: Home
 ---
 
 <div class="row">
-  {% for teaser in site.data.home.teaser %}
+  {% for teaser in site.data.home.teaser.teaser %}
     <div class="col s12 m6 l4">
       <div class="card teaser">
         <div class="card-content">
@@ -22,14 +22,16 @@ title: Home
     </div>
   {% endfor %}
 </div>
+</div>
 
-{% include Parallax.html %}
+{% include Parallax.html image="/assets/img/wien_outside.png" height="450px" %}
 
+<div class="container">
 <h1>Neuigkeiten</h1>
 <hr>
 
 <div class="row">
-  {% for news in site.data.home.news %}
+  {% for news in site.data.home.news.news %}
     <div class="col s12 m6">
       <div class="card hoverable">
         <div class="card-image waves-effect waves-block waves-light">
