@@ -8,18 +8,18 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="{{ 'assets/css/materialize.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'assets/css/materialize.css' | absolute_url }}">
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="{{ 'assets/js/bin/materialize.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/bin/materialize.js' | absolute_url }}"></script>
   </head>
   <body>
 
     <!-- ================== -->
     <!--    START BANNER    -->
     <!-- ================== -->
-    <img src="{{ 'assets/img/logo-mds-small.png' | relative_url }}" alt="mds logo " class="hide-on-small-only top-right-logo">
+    <img src="{{ 'assets/img/logo-mds-small.png' | absolute_url }}" alt="mds logo " class="hide-on-small-only top-right-logo">
     <!-- | append: site.github.build_revision -->
     <div class="slider hide-on-small-only">
       <div class="slider-arrows">
@@ -48,7 +48,7 @@
     <nav class="main-nav" style="z-index: 999">
       <div class="nav-wrapper grey lighten-3 black-text">
         <div class="container">
-          <a href="/" class="brand-logo"><img style="height: 60px; padding: 4px 0;" src="{{'assets/img/logo-mds-small.png' | relative_url}}" alt=""></a>  
+          <a href="/" class="brand-logo"><img style="height: 60px; padding: 4px 0;" src="{{'assets/img/logo-mds-small.png' | absolute_url}}" alt=""></a>  
           <a href="#" data-target="slide-out-menu" class="button-collapse sidenav-trigger hide-on-large-only"><i class="material-icons mdsorange-text">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             {% for item in site.data.default.navbar.nav %}
@@ -66,7 +66,7 @@
 
     <ul id="slide-out-menu" class="sidenav">
       <li>
-        <img src="{{'assets/img/logo-mds-small.png' | relative_url}}" alt="" style="width: 100%; padding: 2% 2% 0 2%;">
+        <img src="{{'assets/img/logo-mds-small.png' |absolute_url}}" alt="" style="width: 100%; padding: 2% 2% 0 2%;">
       </li>
       <li class="divider"></li>
       {% for item in site.data.default.navbar.nav %}
