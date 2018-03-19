@@ -1,0 +1,22 @@
+---
+layout: default
+title: Unser Partner
+permalink: /our_partners/
+---
+
+<h4>{{ page.title }}</h4>
+<hr>
+
+<div class="row">
+  {% for partner in site.data.our_partners.partners %}
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{ partner.img-url }}"  alt="">
+          <a href="{{ partner.url }}" target="_blank" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">keyboard_arrow_right</i></a>
+        </div>
+        
+      </div>
+    </div>
+  {% endfor %}
+</div>

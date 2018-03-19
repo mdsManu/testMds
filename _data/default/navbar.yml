@@ -2,54 +2,51 @@ nav:
   - title: Wir
     dropdown:
       - title: News
-        url: news
+        url: /news
 
       - title: Referenzen
-        url: references
+        url: /references
 
       - title: Über uns
-        url: about
+        url: /about
         
       - title: Unsere Partner
-        url: our_partners
+        url: /our_partners
 
       - title: Kontakt & Impressum
-        url:  contact_imprint
+        url: /contact_imprint
 
-      - title: Kontakt & Impressum
-        url:  contact_imprint
-
-  - title: bringen
+  - title: bieten
     dropdown: 
       - title: Veranstaltungsmanagement
-        url: business_intellegence
+        url: /business_intellegence
 
       - title: Facillity Management
-        url: facility_management
+        url: /facility_management
 
       - title: Business Management
-        url: business_intellegence
+        url: /business_intellegence
 
       - title: Hosting
-        url: hosting
+        url: /hosting
 
       - title: Dienstleistungen
-        url: services
+        url: /services
 
   - title: Lösungen
     dropdown:
       - title: Facillity Management
-        url: facility_management
+        url: /facility_management
 
       - title: Events % Locations
-        url: event_locations
+        url: /event_locations
 
       - title: Konzerthäuser
-        url: concert_halls
+        url: /concert_halls
 
       - title: Orchester & Ensembles
-        url: orchestras_ensembles
+        url: /orchestras_ensembles
 
       - title: Festivals & Veranstalter
-        url: festivals_promoters
+        url: /festivals_promoters
   

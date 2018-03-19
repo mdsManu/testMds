@@ -1,0 +1,80 @@
+first-p: Unser wichtigstes Ziel sind zufriedene Kunden, die nach der Entscheidung für unsere Produkte und Dienstleistungen sowie der Implementierung in ihren Betrieben den Mehrwert unseres integrierten Ansatzes zu schätzen wissen, effizientere Workflows im Einsatz haben und ihren Mitarbeitern die Möglichkeit geben, wieder den Großteil ihrer Arbeitszeit für genuin menschliche Aufgaben zu verwenden. <br> Unser Kundenkreis umfasst u.a. folgende Organisationen, Betriebe und Unternehmen aus den Bereichen ...
+
+references:
+
+  - title: ...Veranstaltungsbetriebe/ <br> Konzerthäuser
+    companies:
+    
+    - name: Wiener_Musikverein
+      url: ""
+    - name: Wiener_Konzerthaus
+      url: ""
+    - name: Gewandhaus_zu_Leipzig
+      url: ""
+    - name: Konzerthaus_Berlin
+      url: ""
+    - name: Philharmonie_Berlin
+      url: ""
+    - name: Elbphilharmonie_Hamburg
+      url: ""
+    - name: Tonhalle_Düsseldorf
+      url: ""
+    - name: Staatsbad_Bad_Kissingen
+      url: ""
+    - name: Wiener_Stadthalle
+      url: ""
+    - name: Philharmonie_Luxemburg
+      url: ""
+    - name: Jeunesse
+      url: ""
+    - name: MünchenMusik
+      url: ""
+    - name: Besondere_Orte_Berlin
+      url: ""
+    - name: Pierre-Boulez-Saal_Berlin
+
+  - title: ...Orchester
+    companies:
+    
+    - name: Berliner Philharmoniker
+      url: ""
+    - name: Wiener Philharmoniker
+      url: ""
+    - name: Wiener Symphoniker
+      url: ""
+    - name: ORF Radio-Symphonieorchester Wien
+      url: ""
+    - name: Symphonieorchester des Bayerischen Rundfunks
+      url: ""
+    - name: Sinfonieorchester, Chor und Kinderchor des Mitteldeutschen Rundfunks
+      url: ""
+    - name: Die Deutsche Kammerphilharmonie Bremen
+      url: ""
+    - name: Mozarteumorchester Salzburg
+      url: ""
+    - name: Orchestre Philharmonique du Luxembourg
+      url: ""
+    - name: Nederlands Symfonieorkest
+      url: ""
+    - name: Metropole Orkest
+      url: ""
+    - name: Haydn-Orchester von Bozen und Trient
+      url: ""
+    - name: Symphonieorchester Vorarlberg
+      url: ""
+
+  - title: ...Facility Management
+    companies:
+    
+    - name: Diakonie Stetten
+      url: ""
+    - name: Die Zieglerschen Anstalten e.V.
+      url: ""
+    - name: Mariaberg e.V.
+      url: ""
+    - name: Hilti
+      url: ""
+    - name: Stadt Bamberg
+      url: ""    
+
+second-p: Wenn Sie mit einem Ansprechpartner eines unserer Kunden direkt sprechen wollen, kontaktieren Sie uns – wir vermitteln Ihnen gerne ein Gespräch, bei dem Sie sich ungefiltert von unserer Leistung aus erster Hand überzeugen können.
