@@ -2,51 +2,51 @@ nav:
   - title: Wir
     dropdown:
       - title: News
-        url: testMds/news
+        url: news
 
       - title: Referenzen
-        url: testMds/references
+        url: references
 
       - title: Über uns
-        url: testMds/about
+        url: about
         
       - title: Unsere Partner
-        url: testMds/our_partners
+        url: our_partners
 
       - title: Kontakt & Impressum
-        url: testMds/contact_imprint
+        url: contact_imprint
 
   - title: bieten
     dropdown: 
       - title: Veranstaltungsmanagement
-        url: testMds/business_intellegence
+        url: business_intellegence
 
       - title: Facillity Management
-        url: testMds/facility_management
+        url: facility_management
 
       - title: Business Management
-        url: testMds/business_intellegence
+        url: business_intellegence
 
       - title: Hosting
-        url: testMds/hosting
+        url: hosting
 
       - title: Dienstleistungen
-        url: testMds/services
+        url: services
 
   - title: Lösungen
     dropdown:
       - title: Facillity Management
-        url: testMds/facility_management
+        url: facility_management
 
       - title: Events % Locations
-        url: testMds/event_locations
+        url: event_locations
 
       - title: Konzerthäuser
-        url: testMds/concert_halls
+        url: concert_halls
 
       - title: Orchester & Ensembles
-        url: testMds/orchestras_ensembles
+        url: orchestras_ensembles
 
       - title: Festivals & Veranstalter
-        url: testMds/festivals_promoters
+        url: festivals_promoters
   
