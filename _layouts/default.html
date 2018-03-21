@@ -19,7 +19,7 @@
     <!-- ================== -->
     <!--    START BANNER    -->
     <!-- ================== -->
-    <img src="/assets/img/logo-mds-small.png" alt="mds logo " class="hide-on-small-only top-right-logo">
+    <img src="{{ site.baseurl }}assets/img/logo-mds-small.png" alt="mds logo " class="hide-on-small-only top-right-logo">
     <!-- | append: site.github.build_revision -->
     <div class="slider hide-on-small-only">
       <div class="slider-arrows">
@@ -29,7 +29,7 @@
       <ul class="slides">
         {% for banner in site.data.default.banner.banner %}
         <li>
-          <img src="/{{ banner.img-url }}" alt="">
+          <img src="{{ site.baseurl }}{{ banner.img-url }}" alt="">
           <div class="caption banner-text hoverable">
             <h4>{{ banner.title }}</h4>
             <p class="light grey-text text-lighten-3 flow-text">{{ banner.text }}</p>
