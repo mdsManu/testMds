@@ -19,7 +19,7 @@ nav:
   - title: bieten
     dropdown: 
       - title: Veranstaltungsmanagement
-        url: business_intellegence
+        url: event_management
 
       - title: Facillity Management
         url: facility_management
