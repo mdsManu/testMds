@@ -29,7 +29,7 @@
       <ul class="slides">
         {% for banner in site.data.default.banner.banner %}
         <li>
-          <img src="{{ site.baseurl }}{{ banner.img-url }}" alt="">
+          <img src="{{ site.baseurl }}/{{ banner.img-url }}" alt="">
           <div class="caption banner-text hoverable">
             <h4>{{ banner.title }}</h4>
             <p class="light grey-text text-lighten-3 flow-text">{{ banner.text }}</p>
@@ -50,7 +50,7 @@
     <nav class="main-nav" style="z-index: 2">
       <div class="nav-wrapper grey lighten-3 black-text">
         <div class="container">
-          <a href="/" class="brand-logo"><img style="height: 60px; padding: 4px 0;" src="{{ '/assets/img/logo-mds-small.png' | relative_url }}" alt=""></a>  
+          <a href="{{ site.baseurl }}" class="brand-logo"><img style="height: 60px; padding: 4px 0;" src="{{ '/assets/img/logo-mds-small.png' | relative_url }}" alt=""></a>  
           <a href="#" data-target="slide-out-menu" class="button-collapse sidenav-trigger hide-on-large-only"><i class="material-icons mdsorange-text">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             {% for item in site.data.default.navbar.nav %}
