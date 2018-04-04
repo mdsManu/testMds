@@ -57,7 +57,7 @@
               <li><a href="{{ item.url }}" class="dropdown-trigger mdsorange-text" data-target="{{ item.title }}_dropdown" style="font-size: 25px; font-weight: 600">{{ item.title }}</a></li>
               <ul id="{{ item.title }}_dropdown" class="dropdown-content">
                 {% for dropdown in item.dropdown %}
-                  <li><a href="/{{ site.baseurl }}/{{ dropdown.url }}">{{ dropdown.title }}</a></li>
+                  <li><a href="{{ site.baseurl }}/{{ dropdown.url }}">{{ dropdown.title }}</a></li>
                 {% endfor %}
               </ul>
             {% endfor %}
