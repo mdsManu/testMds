@@ -35,7 +35,7 @@ title: Home
     <div class="col s12 m6">
       <div class="card hoverable">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="{{ site.basurl }}assets/img/news/{{ news.img-url }}" alt="">
+          <img class="activator" src="/assets/img/news/{{ news.img-url }}" alt="">
         </div>
         <div class="card-content">
           <span class="card-title activator grey-text text-darken-4">{{ news.title }}<i class="material-icons right">more_vert</i></span>
@@ -103,6 +103,10 @@ title: Home
     margin-top: 0.2em;
     /* bg color = bg color under block */
     background: white;
+  }
+
+  .card p {
+    white-space: pre-line;
   }
 
   @media screen and (max-width: 1637px) {

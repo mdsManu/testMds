@@ -1,0 +1,28 @@
+first: 
+  Die effiziente Instandhaltung von Gebäuden sowie die Überwachung der Raum- und Gebäudedaten ist speziell in komplexen Gebäudestrukturen mit täglich wechselnden Besuchern eine große Herausforderung. Zusätzlich zur Verwaltung der Gebäudedaten kommt eine übersichtliche Zugangskontrolle sowie die Verwaltung von Ereignissen (Stromausfälle, Störungen etc.) und durchgeführte bauliche Maßnahmen (Reparaturen, Renovierungen etc.) samt Kosten.
+
+
+  Verschaffen Sie sich mit dem evis-Schwesterprodukt pit-fm der deutschen Software-Schmiede pit-cup GmbH einen perfekten Überblick über Ihre Gebäude und sorgen Sie für einen funktionierenden Basisbetrieb.
+
+second:
+  - title: Gebäude- und Raumdaten&#58;
+    content: Legen Sie die Daten Ihrer Gebäude, Geschosse und Raumstrukturen übersichtlich und mit komplexen Filtermöglichkeiten an.
+
+  - title: Schließsystem&#58;
+    content: Bilden Sie Ihre Schließsysteme bis hin zum einzelnen Schließzylinder ab und beobachten Sie, welche Personen über welche Zutrittsmöglichkeiten verfügen.
+
+  - title: Ereignisse&#58;
+    content: Dokumentieren Sie alle relevanten Ereignisse wie Stromausfälle und Schäden und lassen Sie sich über automatisch generierte Reports über deren Häufigkeit informieren.
+
+  - title: bauliche Maßnahmen&#58;
+    content: Dokumentieren und planen Sie Reparaturen und Renovierungsmaßnahmen für Ihre Gebäudeinstandhaltung. Halten Sie sich über die integrierte Terminverwaltung mit automatischer Terminfortschreibung über alle Aktivitäten auf dem Laufenden.
+
+third:
+  - title: CAD-Anbindungen&#58;
+    content: Lassen Sie sich alle Geschosse, Räume, Türen und andere Installationsobjekte in Ihren CAD-Plänen anzeigen
+  
+  - title: Wartungspläne&#58;;
+    content: Vergessen Sie nie wieder einen Wartungstermin und behalten Sie Instandhaltungs- sowie Reinvestitionskosten im Auge.
+
+  - title: Dokumentation&#58;
+    content: Führen Sie detailliert und strukturiert Aufzeichnungen über Vorkommnisse und reagieren Sie effizient und zielgerichtet mit den richtigen Maßnahmen

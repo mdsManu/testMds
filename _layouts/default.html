@@ -8,7 +8,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="/assets/css/materialize.css">
+    <link rel="stylesheet" href="{{ '/assets/css/materialize.css ' | relative_url }}">
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -42,10 +42,12 @@
     <!--     END BANNER     -->
     <!-- ================== -->
 
+    
+
     <!-- ================== -->
     <!--    START NAVBAR    -->
     <!-- ================== -->
-    <nav class="main-nav" style="z-index: 999">
+    <nav class="main-nav" style="z-index: 2">
       <div class="nav-wrapper grey lighten-3 black-text">
         <div class="container">
           <a href="/" class="brand-logo"><img style="height: 60px; padding: 4px 0;" src="/assets/img/logo-mds-small.png" alt=""></a>  
@@ -59,6 +61,11 @@
                 {% endfor %}
               </ul>
             {% endfor %}
+            <li><a href="#!" class="dropdown-trigger" data-target="tv_dropdown" style="padding: 0; margin: 0; height: 65px;"><img src="assets/img/tv/logo.jpg" alt="" style="height: 65px;"></a></li>
+            <ul id="tv_dropdown" class="dropdown-content">
+              <li><a href="#!" class="blue-text">Fernwartung</a></li>
+              <li><a href="#!" class="blue-text">Meeting</a></li>
+            </ul>
           </ul>
         </div>
       </div>
@@ -72,7 +79,7 @@
       {% for item in site.data.default.navbar.nav %}
       <li class="no-padding">
         <ul class="collapsible collapsible-accordion">
-          <li><a class="collapsible-header">{{ item.title }}</a></li>
+          <li><div class="collapsible-header">{{ item.title }}</div>
           <div class="collapsible-body">
             <ul>
               {% for dropdown in item.dropdown %}
@@ -81,6 +88,7 @@
               <li class="divider"></li>
             </ul>
           </div>
+        </li>
         </ul>  
       </li>
       {% endfor %}
@@ -130,14 +138,19 @@
   var instance = M.Pushpin.init(elem, { top: 900 });
 
   // Dropdown
-  $('.dropdown-trigger').dropdown({ coverTrigger: false, hover: true });
+  var elem = document.querySelectorAll('.dropdown-trigger');
+  //var elem = document.getElementsByClassName("dropdown-trigger");
+  var instance = M.Dropdown.init(elem, { coverTrigger: false, hover: true });
+
+  // $('.dropdown-trigger').dropdown({ coverTrigger: false, hover: true });
 
   var elem = document.querySelector('.sidenav');
   var instance = M.Sidenav.init(elem);
 
-  // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
-  var elem = document.querySelector('.collapsible');
+   // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+  var elem = document.querySelectorAll('.collapsible');
   var instance = M.Collapsible.init(elem);
+  // $('.collapsible').collapsible();
 
   // Slider
   var elem = document.querySelector('.slider');
@@ -145,6 +158,12 @@
 
 </script>
 
-<script>
-  console.log(document.URL);
-</script>
+<style>
+  .tv {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+  }
+</style>
