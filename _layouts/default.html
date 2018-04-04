@@ -29,7 +29,7 @@
       <ul class="slides">
         {% for banner in site.data.default.banner.banner %}
         <li>
-          <img src="/{{ banner.img-url }}" alt="">
+          <img src="{{ site.baseurl }}{{ banner.img-url }}" alt="">
           <div class="caption banner-text hoverable">
             <h4>{{ banner.title }}</h4>
             <p class="light grey-text text-lighten-3 flow-text">{{ banner.text }}</p>
